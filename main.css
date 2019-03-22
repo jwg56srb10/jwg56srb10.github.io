@@ -1,0 +1,139 @@
+	p{
+		color:red;
+		font-size:30px;
+	}
+
+	 .listitem {
+   color:blue;
+   font-size:20px;
+   }
+      
+      .paragraph {
+    color:yellow;
+    font-size:40px;
+   }
+   
+   #background{
+   	background-color:white;
+   }
+
+   #button{
+   	width:25%;
+   	heigth:30%;
+   	color:white;
+   	background-color:black;
+   	border-radius:15px;
+   }
+
+   header{
+      height:150px;
+      width:99%;
+      border:2px solid black;
+      background:#ffff66;
+      margin-bottom:15em;
+   }
+
+   footer{
+      height:150px;
+      width:99%;
+      border:2px solid black;
+      background:#b3ffb3;
+    }
+
+    .wrap-trivia{
+      border:5px double yellow;
+      width:100%;
+      padding:25px;
+    }
+
+    .wrap-list{
+      heigth:400px;
+      width:450px;
+      border:5px dashed green;
+    }
+
+    .wrap-text {
+      color: #ff28e0;
+      font-size: 70px;
+    }
+   
+    #one{
+      height: 150px;
+      width: 150px;
+      background-color: red;
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      position: relative;
+      top:250px;    
+    }
+
+    #two{
+      height:150px;
+      width:150px;
+      background-color: yellow;
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+      position: fixed; 
+      left:25%;   
+    }
+
+    #three{
+      height:150px;
+      width:150px;
+      background-color: blue;
+      display: inline-block;
+      position: absolute;
+
+    }
+
+    #height{
+      height: 2048px;
+    }
+
+    .navitem{
+      list-style-type:none;
+      display:inline;
+      padding:1.5em;
+    }
+
+    #navmenu{
+      width:400px;
+      height:30px; 
+      margin:auto;
+      background-color:black;   
+    }
+
+    a:link{
+      color:red;
+    }
+
+    a:visited{
+      color:blue;
+    }
+
+    a:hover{
+      color:purple;
+    }
+
+    a:active{
+      color:orange;
+    }
+
+    #rightside{
+      float:right;
+      width:50%;
+    }
+
+    #leftside{
+      width:50%;
+    }
+
+    #clearfloat{
+      clear:both;
+    }
+
+
+
+
