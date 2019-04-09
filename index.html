@@ -1,79 +1,94 @@
-<html>
-	<head>
-		<link type="text/css"rel="stylesheet" href="stylesheets.css">
+<html> 
+ <head>
+ 	 <link type="text/css" rel="stylesheet" href="main.css" />
+ 	 <title>  Dancing With Earthworms </title> 
+ 		<style></style>
+		<script>function banner(){ 
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+			var text = confirm("Did You Really Want to Click on My Banner?"); 
 
-		<title> Comment Post </title>
-	</head>
-	<body>
-		<div class="container"> 
-			
-			<div class="row">
-				<div id="logo"
-				 class="col-xs-12 col-sm-4">
-						<b>Dancing With Earthworms</b>
-					<img class="img-responsive" src="http://myzerowaste.com/wp-content/uploads/2012/10/happy-worm.jpg"/>
-				</div>
-				</div><!--end logo row-->
-			
-			<div class="row">
-			    <div id="menu" class="col-xs-12 col-sm-4"> 
+				return text; 
 
-			    	<ul class="nav nav-tabs">
-			    		<li><a href="file:///C:/Users/sgall/Desktop/Cassie's%20code/Sublime/index.html">HOME</a>
-			    		</li>
-			    		
-			    		<li><a href="file:///C:/Users/sgall/Desktop/Cassie's%20code/Sublime/dogs.html">Dogs</a></li>
-			    		
-			    		<li><a href="file:///C:/Users/sgall/Desktop/Cassie's%20code/Sublime/goats.html">Goats</a></li>
-			    	
-			    		<li><a href="file:///C:/Users/sgall/Desktop/Cassie's%20code/Sublime/pigs.html">Pigs</a></li>
-
-
-
-
-
-			    	</ul>
-			    </div>
-			</div><!-- end menu row -->
-		<div class="row"> 
-			<div id="comments"
-			class="col-xs-12 col-sm-8">
-			        COMMENTS
-		<div id="form" class="col-xs-12 col-sm-4">			
-			<header id="header">
-			 Leave a Comment
-			 </header>
-			<form class="form-inline">
-				<label> Name: </label>
+				} 	
+				function answer(){
+				var radio = document.getElementsByName("trivia"); 
+				var selection = false; 
+				var message = "";
 				
-				<input type="text" class="form-control" id="name" placeholder="Enter Name">
+				for( var i = 0; i < radio.length; i++) { 
+										if(radio[i].value == "Warriors" && radio[i].checked == true) { 
+							selection = true; 
+							} //end ofststement 
+						} // end of loop
+					if(selection == true) {
+					message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+					} else { 
+					message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+					}
+					document.getElementById("response").innerHTML = message;
+					}		
+				</script>
+		
+		
+ 
+ </head> 
+ <body id="background">
+ 	<a href="http://www.polyfacefarms.com/"onclick="return banner()">
+ 	<header id="header"> <span class="wrap-text">  Where we got our name. </span> </header> </a>
+ 	<nav> 
+		<ul id="navmenu">
+			<li  class="navitem"> <a href="index.html"> Home </a> </li>
+			<li  class="navitem"> <a href="goats.html"> Goats </a> </li>
+			<li  class="navitem"> <a href="pigs.html"> Pigs </a> </li>
+			<li  class="navitem"> <a href="dogs.html"> Dogs </a> </li>
+			<li class="navitem"> <a href="file:///C:/Users/sgall/Desktop/Cassie's%20code/Sublime/bootstrap/index.html#"> Comments </a> </li>
+		</ul>
+	</nav>
+	
+ 	
+ 	<h1 class="paragraph">  A small farm experence through the eyes of a family of eight. </span>
+ 		<p> We have <u>pigs</u>, <b>dogs</b>, <i>goats</i>, horses, and chickens.</p>
+ <div class="wrap-list">
+ 	<ol> 
+ 		<li class="listitem"> Pigs </li>
+ 		<li class="listitem"> Goats </li>
+ 		<li class="listitem"> Chickens </li>
+ 		<li class="listitem"> dogs </li>
+ 		<li class="listitem"> Horses </li>
+ 	</ol>
+ </div>
+	<div id="rightside">
+	<div class="wrap-trivia">
+	 
+	 	<h2> Basketball Trivia Question <h2>
+     	<p> Who won the 2016-17 NBA championship? </p>
+       <form>  
+ 			<div id="response"> </div>
+ 			<input type="radio" name="trivia" value="CAVS"> CAVS <br>
+			<input type="radio" name="trivia" value="Warriors">Warriors <br>
+			<input type="radio" name="trivia" value="Lakers">Lakers <br>
+			<input type="radio" name="trivia" value="Thunder">Thunder <br> 
+    		 <input type="button" id="submit" value="Click Here" onclick="answer()" id="button">   
+       </form>
+   </div>
+  </div>
+	<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+Your browser does not support HTML 5 audio.
+</audio> 
 
-				<label> Color </label>
-				<select class="form-control">   
-					<option> Red </option> 
-					<option> Blue </option> 
-					<option> White </option> 
-					<option> Orange </option>
-				</select>
-			</form>
-				<form class="control-label"> Title: </label>
-					<input type="text" class="form-control" id="title" placeholder="Enter Comment Title">
 
-					<label> Background Color: </label>
-					<select class="form-control">
-							<option> blue </option>
-							<option> black </option>
-							<option> red </option>
-							<option>yellow </option>
-					 </select>
-					</form>
-				</div><!-- end form id div -->
-				
-			   </div>
-		</div> <!-- end comment row -->
-			
-		</div><!-- end container div -->
-	</body>
+
+	<img src="https://image.shutterstock.com/image-photo/portrait-great-pyrenees-dog-outdoors-450w-1034057392.jpg"/> </div>
+	<div id="leftside">
+		<img src="https://image.shutterstock.com/image-photo/cute-baby-goat-450w-1086392777.jpg" />
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/RN50R3gycgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	\<hr>
+	 </div>
+	 <div id="clearFloat"></div>
+	<center> Cassie <a href="https://www.stockfreeimages.com/"> My Favorite Website</a> </center> 
+
+    <footer> This website was created by Cassie Gallagher. </footer>
+ </body> 
 </html>
